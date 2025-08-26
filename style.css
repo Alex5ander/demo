@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #f0f8e7;
+  color: #3d6b27;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+  background-color: #d8e6c9;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+}
+
+a {
+  color: #3d6b27;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.container {
+  padding: 20px;
+}
+
+footer {
+  background-color: #d8e6c9;
+  padding: 10px;
+  position: relative;
+}
+
+#whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+}
+
+.dark-mode {
+  background-color: #333;
+  color: #f0f0f0;
+}
+
+.dark-mode header,
+.dark-mode footer {
+  background-color: #444;
+}
+
+.dark-mode a {
+  color: #f0f0f0;
+}
+
+.dark-mode-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #3d6b27;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.dark-icon {
+  display: block;
+}
+
+.light-icon {
+  display: none;
+}
+
+.dark-mode .dark-icon {
+  display: none;
+}
+
+.dark-mode .light-icon {
+  display: block;
+}
+
+.social a {
+  display: inline-flex;
+  gap: 0.5em;
+  align-items: center;
+}
+
+#images {
+  overflow-x: scroll;
+  display: flex;
+  margin: 16px;
+  scroll-snap-type: x mandatory;
+}
+
+#images img {
+  max-width: 100%;
+  flex: none;
+  margin: 0;
+  scroll-snap-align: start;
+}
